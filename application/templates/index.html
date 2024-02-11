@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h1>Techguardian AI: Previsión Inteligente para la Infraestructura TI.</h1>
+
+            {% if session['username'] %}
+                <h3>Let's get started.</h3>
+            {% else %}
+                <p>Ya está registrado? <a href="{{url_for('login') }}">Login</a></p>
+            {% endif %}
+
+            <div style="text-align:left;">
+                <h2>Visión General de TechGuardian AI </h2> 
+                
+                
+                <p>La implementación de inteligencia artificial para la predicción de fallas en la infraestructura web es un 
+                   proyecto estratégico que emplea técnicas avanzadas, como el aprendizaje automático, con el objetivo de anticipar
+                   y prevenir posibles problemas antes de que impacten en el rendimiento del sitio. Este enfoque se basa en el 
+                   análisis de datos históricos y patrones de comportamiento del sistema. 
+                </p>
+
+                <p>Utilizando modelos de aprendizaje automático, se examinan datos previos para identificar tendencias y anomalías 
+                   que podrían indicar fallas inminentes. Este enfoque proactivo busca evitar tiempos de inactividad no planificados
+                   y optimizar la eficiencia operativa. La clasificación de datos históricos y la identificación de patrones permiten
+                   construir modelos predictivos específicos para diferentes tipos de fallas.
+                </p>
+                La aplicación de la inteligencia artificial en este contexto no solo reduce los costos asociados con el mantenimiento 
+                reactivo, sino que también mejora la disponibilidad y confiabilidad de la infraestructura web. Este proyecto se posiciona
+                 como una inversión estratégica, utilizando datos y patrones para no sólo reaccionar a problemas, sino anticiparse y tomar
+                  medidas preventivas. En resumen, la implementación de inteligencia artificial para la predicción de fallas en la 
+                  infraestructura web representa un paso crucial hacia la eficiencia operativa y la mejora continua en el entorno digital. 
+                <p>
+
+                </p>   
+            </div>
+
+        </div>
+    </div>
+{% endblock %}
